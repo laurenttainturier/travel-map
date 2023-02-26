@@ -5,7 +5,7 @@ export function buildInfoWindow(pointOfInterest: PointOfInterest) {
 		<div class='infoWindow'>
 			<!-- Title -->
 			<h2 class='text-xl my-2 font-bold'>${pointOfInterest.name}</h2>
-			${pointOfInterest.categories.map(buildInfoWindowCategory)}
+			${pointOfInterest.categories.map(buildInfoWindowCategory).join("")}
 
 			<!-- Description -->
 			<p class='text-sm my-2 w-64'>${pointOfInterest.description}</p>
